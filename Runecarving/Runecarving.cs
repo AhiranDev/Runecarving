@@ -1,23 +1,24 @@
-﻿// JotunnModStub
-// a Valheim mod skeleton using Jötunn
+﻿// Runecarving | JotunnModStub
+// a Valheim mod that adds rune-themed item augmentation
+// built on skeleton using Jötunn
 // 
-// File:    JotunnModStub.cs
-// Project: JotunnModStub
+// File:    Runecarving.cs
+// Project: Runecarving
 
 using BepInEx;
 using UnityEngine;
 using BepInEx.Configuration;
 using Jotunn.Utils;
 
-namespace JotunnModStub
+namespace Runecarving
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [BepInDependency(Jotunn.Main.ModGuid)]
     //[NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
-    internal class JotunnModStub : BaseUnityPlugin
+    internal class Runecarving : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.jotunn.jotunnmodstub";
-        public const string PluginName = "JotunnModStub";
+        public const string PluginGUID = "com.AhiranDev.Runecarving";
+        public const string PluginName = "Runecarving";
         public const string PluginVersion = "0.0.1";
 
         private void Awake()
@@ -27,7 +28,7 @@ namespace JotunnModStub
             Config.Bind<int>("Main Section", "Example configuration integer", 1, new ConfigDescription("This is an example config, using a range limitation for ConfigurationManager", new AcceptableValueRange<int>(0, 100)));
 
             // Jotunn comes with its own Logger class to provide a consistent Log style for all mods using it
-            Jotunn.Logger.LogInfo("ModStub has landed");
+            Jotunn.Logger.LogInfo("Runecarving has dug in");
         }
 
 #if DEBUG

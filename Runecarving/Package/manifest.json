@@ -1,0 +1,11 @@
+﻿{
+  "name": "Runecarving",
+  "description": "Adds item augmentation themed as runecarving to Valheim",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/AhiranDev/Runecarving/",
+  "dependencies": [
+    "RandyKnapp-ExtendedItemDataFramework-1.0.0",
+    "denikson-BepInExPack_Valheim-5.4.601",
+    ""
+  ]
+}
